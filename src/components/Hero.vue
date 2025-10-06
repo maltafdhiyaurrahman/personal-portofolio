@@ -5,7 +5,7 @@
       <h1 class="display-3 fw-bold line-tight">Frontend Web</h1>
       <h1 class="display-3 fw-bold line-tight text-shadow mb-4">Developer</h1>
       <p class="text-white mt-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        Transforming the design system into a highly performant and user-centric web product. 
       </p>
     </div>
 

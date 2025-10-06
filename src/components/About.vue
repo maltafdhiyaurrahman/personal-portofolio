@@ -24,9 +24,9 @@
             Muhammad <br /> Altaf <br /> Dhiyaurrahman
           </h3>
           <p class="lead mt-4">
-            I am a fresh graduate of a Bachelor's degree in Informatics with a GPA of 3.51.
-            I have <strong>1 year experience as Frontend Web Developer</strong>, 
-            focusing on the use of Vue and Angular.
+            I am a fresh graduate of a Bachelor's degree in Informatics with a GPA of 3.51 and
+            bring <strong>1 year experience as Frontend Web Developer</strong>. 
+            I specialize in building scalable applications using Vue.js and Angular, always prioritizing clean code and optimal web performance. I am eager to contribute my technical and teamwork skills to an innovative environment.
           </p>
         </div>
       </div>
