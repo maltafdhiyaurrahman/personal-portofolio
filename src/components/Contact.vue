@@ -15,7 +15,7 @@
             <h5 class="fw-bold mb-4">Get in Touch</h5>
             <p class="mb-3">
               <i class="bi bi-envelope-fill me-2 fs-4"></i>
-              your.email@example.com
+              altafff02@gmail.com
             </p>
             <p class="mb-3">
               <i class="bi bi-geo-alt-fill me-2 fs-4"></i>
