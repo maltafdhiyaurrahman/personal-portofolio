@@ -1,28 +1,23 @@
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Body & font global */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding-top: 56px; /* default offset navbar */
+  padding-top: 56px; 
 }
 
-/* Responsive padding untuk fixed navbar */
 @media (max-width: 992px) {
   body {
-    padding-top: 70px; /* navbar lebih tinggi di mobile */
+    padding-top: 70px; 
   }
 }
 
-/* Section spacing */
 section {
-  scroll-margin-top: 70px; /* biar anchor scroll ga ketutup navbar */
+  scroll-margin-top: 70px; 
 }
 
-/* Optional: transisi background untuk navbar saat scroll */
 .custom-navbar {
   transition: background 0.3s ease, color 0.3s ease;
 }

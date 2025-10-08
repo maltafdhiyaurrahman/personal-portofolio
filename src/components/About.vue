@@ -2,7 +2,6 @@
   <section class="about-me py-5 light-section" id="about">
     <div class="container">
       <div class="row align-items-center">
-        <!-- FOTO -->
         <div class="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
           <div class="image-wrapper">
             <div class="bg-block"></div>
@@ -15,7 +14,6 @@
           </div>
         </div>
 
-        <!-- TEKS -->
         <div class="col-12 col-md-7 text-center text-md-start">
           <h2 class="text-uppercase text-muted fw-light mb-2 mt-3 section-label">
             About Me ───
@@ -44,7 +42,7 @@
   display: inline-block;
   width: 100%;
   max-width: 280px;
-  aspect-ratio: 4/5; /* biar proporsi tetap konsisten */
+  aspect-ratio: 4/5; 
 }
 
 .bg-block {
@@ -67,7 +65,7 @@
   border-radius: 25px;
 }
 
-/* Heading Nama */
+
 .tight-heading {
   line-height: 0.95;
   text-transform: uppercase;
@@ -80,7 +78,7 @@
   letter-spacing: 2px;
 }
 
-/* Paragraf */
+
 .lead {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
 }

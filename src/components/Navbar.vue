@@ -5,10 +5,8 @@
       navTheme
     ]"
   >
-    <!-- Logo -->
     <div class="logo fw-bold">Altaf.</div>
 
-    <!-- Burger Menu (Mobile) -->
     <button
       class="navbar-toggler d-lg-none border-0"
       type="button"
@@ -17,7 +15,6 @@
       <i class="bi" :class="isMenuOpen ? 'bi-x-lg' : 'bi-list'"></i>
     </button>
 
-    <!-- Menu + Notif Mobile -->
     <div
       v-if="isMenuOpen && isMobile"
       class="mobile-menu d-flex flex-column align-items-center mt-3 w-100"
@@ -39,7 +36,6 @@
         </li>
       </ul>
 
-      <!-- Notifikasi di Mobile -->
       <div class="notification-wrapper mt-2">
         <div class="notif-icon position-relative" @click="toggleNotif">
           <i class="bi bi-bell"></i>
@@ -58,7 +54,6 @@
       </div>
     </div>
 
-    <!-- Menu Desktop -->
     <ul
       class="nav-menu list-unstyled mb-0 text-center d-none d-lg-flex flex-lg-row"
     >
@@ -78,7 +73,6 @@
       </li>
     </ul>
 
-    <!-- 🔔 Notifikasi Desktop -->
     <div class="notification-wrapper d-none d-lg-block position-relative">
       <div class="notif-icon" @click="toggleNotif">
         <i class="bi bi-bell"></i>
@@ -107,10 +101,9 @@ const navTheme = ref("dark-theme")
 const isMenuOpen = ref(false)
 const isMobile = ref(false)
 const showNotif = ref(false)
-const hasNewUpdates = ref(false) // 🔴 tampilkan badge jika true
+const hasNewUpdates = ref(false) 
 let observer = null
 
-// Hardcoded pembaruan
 const updates = ref([
   "Belum ada perbaruan",
 ])
@@ -129,7 +122,7 @@ const closeMenu = () => {
 
 const toggleNotif = () => {
   showNotif.value = !showNotif.value
-  hasNewUpdates.value = false // badge hilang setelah diklik
+  hasNewUpdates.value = false 
 }
 
 function observeSections() {
@@ -139,13 +132,11 @@ function observeSections() {
       if (entry.isIntersecting) {
         const sectionId = entry.target.getAttribute("id")
 
-        // 🔹 Tema navbar
         const sectionClass = entry.target.classList.contains("dark-section")
           ? "dark-theme"
           : "light-theme"
         navTheme.value = sectionClass
 
-        // 🔹 Menu aktif
         let formattedName = sectionId.charAt(0).toUpperCase() + sectionId.slice(1)
         if (sectionId === "skills") formattedName = "About"
         activeMenu.value = formattedName
@@ -198,7 +189,6 @@ onUnmounted(() => {
   transition: all 0.3s ease;
 }
 
-/* 🔔 Notifikasi */
 .notification-wrapper {
   cursor: pointer;
 }
@@ -229,7 +219,6 @@ onUnmounted(() => {
   border-bottom: none;
 }
 
-/* 🌑 Dark theme */
 .dark-theme .logo,
 .dark-theme .nav-link,
 .dark-theme .navbar-toggler,
@@ -250,7 +239,6 @@ onUnmounted(() => {
   border: 1px solid #444;
 }
 
-/* 🌕 Light theme */
 .light-theme .logo,
 .light-theme .nav-link,
 .light-theme .navbar-toggler,
@@ -270,7 +258,6 @@ onUnmounted(() => {
   color: #303030;
 }
 
-/* 📱 Mobile */
 @media (max-width: 991px) {
   .mobile-menu .nav-menu {
     border-radius: 12px;

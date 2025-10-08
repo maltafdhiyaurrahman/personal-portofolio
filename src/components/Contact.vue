@@ -1,16 +1,13 @@
 <template>
   <section class="contact-section py-5 light-section" id="contact">
     <div class="container">
-      <!-- Judul -->
       <div class="text-center mb-5">
         <h6 class="text-uppercase text-muted fw-light">Contact</h6>
         <h1 class="fw-bold display-2">Let's Collaborate</h1>
       </div>
 
       <div class="row">
-        <!-- Bagian kiri -->
         <div class="col-md-6 d-flex flex-column justify-content-between">
-          <!-- Get in Touch sejajar dengan Say Hello -->
           <div>
             <h5 class="fw-bold mb-4">Get in Touch</h5>
             <p class="mb-3">
@@ -23,7 +20,6 @@
             </p>
           </div>
 
-          <!-- Find Me sejajar tombol Send -->
           <div class="mt-5">
             <h5 class="fw-bold mb-3">Find Me</h5>
             <div class="d-flex gap-3">
@@ -35,7 +31,6 @@
           </div>
         </div>
 
-        <!-- Bagian kanan -->
         <div class="col-md-6">
           <h3 class="fw-bold mb-4">Say Hello</h3>
           <form @submit="handleSubmit"
@@ -65,7 +60,7 @@
 import { ref } from "vue";
 
 const status = ref("");
-const isSuccess = ref(false); // Tambahan
+const isSuccess = ref(false);
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -79,11 +74,11 @@ function handleSubmit(e) {
     .then((response) => {
       if (response.ok) {
         status.value = "Thanks! Your message has been sent.";
-        isSuccess.value = true; // Set isSuccess menjadi true
+        isSuccess.value = true;
         e.target.reset();
       } else {
         status.value = "Oops! There was a problem.";
-        isSuccess.value = false; // Set isSuccess menjadi false
+        isSuccess.value = false; 
       }
     })
     .catch(() => {
@@ -98,7 +93,6 @@ function handleSubmit(e) {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Kolom kiri & kanan responsive */
 .col-md-6 {
   margin-bottom: 2rem;
 }
@@ -108,7 +102,6 @@ function handleSubmit(e) {
   }
 }
 
-/* Form control */
 .form-control {
   box-shadow: none !important;
   font-family: inherit;
@@ -121,12 +114,10 @@ function handleSubmit(e) {
   box-shadow: none;
 }
 
-/* Textarea */
 textarea.form-control {
   min-height: 120px;
 }
 
-/* Tombol custom pill */
 .btn-custom {
   background-color: #303030;
   color: #fff;
@@ -138,7 +129,6 @@ textarea.form-control {
   color: #fff;
 }
 
-/* Social icons */
 .d-flex a {
   transition: color 0.3s ease;
 }

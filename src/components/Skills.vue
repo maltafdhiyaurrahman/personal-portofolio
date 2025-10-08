@@ -2,13 +2,11 @@
   <section id="skills" class="skills light-section py-5">
     <div class="container">
       <div class="skills-box mx-auto p-4">
-        <!-- Judul -->
         <div class="text-center text-white mb-5">
           <h1 class="fw-bold">Skills</h1>
           <p class="lead mt-2">Some of the newest technology that I use</p>
         </div>
 
-        <!-- Grid Skill -->
         <div class="row g-3 justify-content-center">
           <div
             class="col-6 col-sm-4 col-md-3 col-lg-2"
@@ -73,7 +71,6 @@ const skills = [
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Warna brand pas hover */
 .skill-card:hover .vue-icon {
   color: #42b883;
 }

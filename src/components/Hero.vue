@@ -9,20 +9,16 @@
       </p>
     </div>
 
-    <!-- Putih Kotak Full Width -->
     <div class="scroll-box"></div>
 
-    <!-- Scroll Down Circle -->
     <div class="scroll-down-wrapper">
       <svg width="150" height="150" viewBox="0 0 100 100">
         <defs>
           <path id="circlePath" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" />
         </defs>
 
-        <!-- Putih Lingkaran Background -->
         <circle cx="50" cy="50" r="50" fill="white" />
 
-        <!-- ROTATING TEXT ONLY -->
         <g class="rotate-text">
           <text font-size="10" fill="#303030" letter-spacing="2" text-transform="uppercase">
             <textPath href="#circlePath" startOffset="0%">
@@ -31,7 +27,6 @@
           </text>
         </g>
 
-        <!-- CENTER ARROW, STAYS STILL -->
         <circle cx="50" cy="50" r="30" fill="#303030" />
 
         <text
@@ -67,7 +62,6 @@
   text-shadow: 0 -4px 15px rgba(0, 0, 0, 0.8);
 }
 
-/* Kotak putih full lebar di bawah */
 .scroll-box {
   position: absolute;
   bottom: 0px;
@@ -79,16 +73,15 @@
   z-index: 1;
 }
 
-/* Wrapper lingkaran scroll */
 .scroll-down-wrapper {
   position: absolute;
-  bottom: 10px; /* pas di atas kotak */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 12vw;   /* relatif ke lebar layar */
+  width: 12vw;  
   max-width: 120px; 
-  min-width: 65px;  /* biar ga terlalu kecil */
-  aspect-ratio: 1/1; /* jaga proporsi bulat */
+  min-width: 65px;  
+  aspect-ratio: 1/1; 
   z-index: 10;
 }
 
@@ -96,7 +89,7 @@
   width: 100%;
   height: 100%;
 }
-/* Animate only the text group */
+
 .rotate-text {
   animation: rotateText 10s linear infinite;
   transform-origin: 50% 50%;
@@ -115,8 +108,8 @@
   }
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 992px) { /* Tablet */
+
+@media (max-width: 992px) { 
   .line-tight {
     font-size: 5rem;
     line-height: 0.7;
@@ -132,7 +125,7 @@
   }
 }
 
-@media (max-width: 576px) { /* Mobile */
+@media (max-width: 576px) { 
   .line-tight {
     font-size: 2.8rem;
     line-height: 0.9;

@@ -241,13 +241,12 @@ function setActiveProject(project) {
   max-height: 70vh;
 }
 
-/* --- Tambahan: Gaya baru untuk tombol utama di modal --- */
 .btn-solid-primary {
   background-color: white;
   color: #303030;
   border: 1px solid white;
   border-radius: 50px;
-  padding: 0.375rem 1.5rem; /* Menyesuaikan padding Bootstrap */
+  padding: 0.375rem 1.5rem; 
   transition: all 0.3s ease;
 }
 .btn-solid-primary:hover {
