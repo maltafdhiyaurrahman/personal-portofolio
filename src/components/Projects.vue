@@ -108,6 +108,8 @@
                 {{ tech }}
               </li>
             </ul>
+            <h6 class="fw-bold mt-4">Role:</h6>
+            <p>{{ activeProject.role }}</p>
 
             <!-- <div class="d-flex gap-2 mt-4 justify-content-end">
               <a
@@ -149,6 +151,7 @@ const projects = [
     images: [portal1, portal2, portal3, portal4, portal5], 
     description: "Portal Istana is a web-based project designed using the Laravel Lumen and VueJS frameworks to improve services for people interested in visiting the Presidential Palace and to store visit documentation. This project includes two main applications, Portal Istana and Admin Portal Istana, which are integrated to provide an optimal user experience.",
     tech: "Vue.js, Bootstrap",
+    role: "Frontend Developer",
     demo: "#",
     repo: "#",
   },
@@ -157,14 +160,16 @@ const projects = [
     images: [blud], 
     description: "e-RBA BLUD (Rencana Bisnis dan Anggaran Badan Layanan Umum Daerah) is a web application for generalizing the RBA (Budget Plan) of each BLUD (Regional Public Service Agency) under the DKI Jakarta Health Agency.",
     tech: "Angular, Bootstrap",
+    role: "Frontend Developer",
     demo: "#",
     repo: "#",
   },
   {
     title: "coming soon",
     images: [soon], 
-    description: "A personal website to showcase my web development projects and skills. Built from scratch with a focus on modern and clean UI/UX.",
-    tech: "Vue.js, Bootstrap 5, Vite, JavaScript",
+    description: "coming soon",
+    tech: "coming soon",
+    role: "Frontend Developer",
     demo: "#",
     repo: "#",
   },
