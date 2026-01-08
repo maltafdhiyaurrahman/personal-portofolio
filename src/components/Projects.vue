@@ -15,12 +15,12 @@
           v-for="(project, index) in limitedProjects"
           :key="index"
         >
-          <!-- <div
+          <div
             class="project-card position-relative"
             data-bs-toggle="modal"
             data-bs-target="#projectModal"
             @click="setActiveProject(project)"
-          > -->
+          >
           <div
             class="project-card position-relative disabled"
           >
@@ -32,8 +32,9 @@
         </div>
       </div>
     </div>
+    </div>
 
-    <!-- <div
+    <div
       class="modal fade"
       id="projectModal"
       tabindex="-1"
@@ -108,7 +109,7 @@
               </li>
             </ul>
 
-            <div class="d-flex gap-2 mt-4 justify-content-end">
+            <!-- <div class="d-flex gap-2 mt-4 justify-content-end">
               <a
                 v-if="activeProject.title !== 'Personal Portfolio Website'"
                 :href="activeProject.demo"
@@ -124,32 +125,38 @@
               >
                 Repository
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 </template>
 
 <script setup>
 import { ref, computed } from "vue";
 import soon from "@/assets/soon.png";
+import portal1 from "@/assets/portal1.png";
+import portal2 from "@/assets/portal2.png";
+import portal3 from "@/assets/portal3.png";
+import portal4 from "@/assets/portal4.png";
+import portal5 from "@/assets/portal5.png";
+import blud from "@/assets/bluddki.jpeg";
 
 const projects = [
   {
-    title: "coming soon",
-    images: [soon], 
-    description: "A personal website to showcase my web development projects and skills. Built from scratch with a focus on modern and clean UI/UX.",
-    tech: "Vue.js, Bootstrap 5, Vite, JavaScript",
+    title: "Portal Istana",
+    images: [portal1, portal2, portal3, portal4, portal5], 
+    description: "Portal Istana is a web-based project designed using the Laravel Lumen and VueJS frameworks to improve services for people interested in visiting the Presidential Palace and to store visit documentation. This project includes two main applications, Portal Istana and Admin Portal Istana, which are integrated to provide an optimal user experience.",
+    tech: "Vue.js, Bootstrap",
     demo: "#",
     repo: "#",
   },
   {
-    title: "coming soon",
-    images: [soon], 
-    description: "A personal website to showcase my web development projects and skills. Built from scratch with a focus on modern and clean UI/UX.",
-    tech: "Vue.js, Bootstrap 5, Vite, JavaScript",
+    title: "e-RBA BLUD",
+    images: [blud], 
+    description: "e-RBA BLUD (Rencana Bisnis dan Anggaran Badan Layanan Umum Daerah) is a web application for generalizing the RBA (Budget Plan) of each BLUD (Regional Public Service Agency) under the DKI Jakarta Health Agency.",
+    tech: "Angular, Bootstrap",
     demo: "#",
     repo: "#",
   },
